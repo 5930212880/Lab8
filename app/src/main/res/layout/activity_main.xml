@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="รหัสนักศึกษา"
+        android:inputType="none"
+        android:id="@+id/txtId"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:hint="ชื่อนักศึกษา"
+    android:id="@+id/txtName"
+        android:layout_below="@+id/txtId"
+    android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="เบอร์โทร"
+        android:id="@+id/txtTel"
+        android:layout_below="@+id/txtName"
+        android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="อีเมลล์"
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/txtTel"
+        android:layout_marginTop="0dp"/>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="10dp"
+        android:text="save"/>
+
+    <Button
+        android:id="@+id/btnShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSave"
+        android:layout_alignParentEnd="true"
+        android:text="show"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmail"
+        android:layout_marginTop="30dp"
+        android:id="@+id/dataView">
+    </ListView>
+
+
+
+</RelativeLayout>
